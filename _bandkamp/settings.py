@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", False)
 
-ALLOWED_HOSTS = ["https://spr5-bandkamp-fredrook-production.up.railway.app/", "0.0.0.0"]
+ALLOWED_HOSTS = ["spr5-bandkamp-fredrook-production.up.railway.app", "0.0.0.0"]
 
 # Application definition
 DJANGO_APPS = [
