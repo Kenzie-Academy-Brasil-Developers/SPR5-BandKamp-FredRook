@@ -9,7 +9,5 @@ class Song(models.Model):
     duration = models.CharField(max_length=255)
 
     album = models.ForeignKey(
-        "albums.Album",
-        on_delete=models.CASCADE,
-        related_name="songs",
+        "albums.Album", on_delete=models.CASCADE, related_name="songs"
     )

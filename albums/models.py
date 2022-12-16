@@ -9,7 +9,5 @@ class Album(models.Model):
     year = models.PositiveSmallIntegerField()
 
     user = models.ForeignKey(
-        "users.User",
-        on_delete=models.CASCADE,
-        related_name="albums",
+        "users.User", on_delete=models.CASCADE, related_name="albums"
     )
